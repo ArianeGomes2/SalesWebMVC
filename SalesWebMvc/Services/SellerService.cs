@@ -10,14 +10,14 @@ namespace SalesWebMvc.Services
     {
         private readonly SalesWebMvcContext _context;
 
-        public SellerService(SalesWebMvcContext context)
+        public SellerService(SalesWebMvcContext context)//construtor para que3 a injeção de dependencias possa acontecer
         {
             _context = context;
         }
 
         public List<Seller> FindAll()
         {
-            return _context.Seller.ToList();
+            return _context.Seller.ToList(); //acessa a fonte de dados dos vendedores e retorna uma lista
         }
     }
 }
