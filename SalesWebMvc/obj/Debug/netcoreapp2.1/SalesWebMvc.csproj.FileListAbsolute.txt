@@ -6,7 +6,6 @@ D:\Ariane\Curso Udemy - C#\Curso completo\Exercícios\SalesWebMvc\SalesWebMvc\ob
 D:\Ariane\Curso Udemy - C#\Curso completo\Exercícios\SalesWebMvc\SalesWebMvc\obj\Debug\netcoreapp2.1\SalesWebMvc.TagHelpers.input.cache
 D:\Ariane\Curso Udemy - C#\Curso completo\Exercícios\SalesWebMvc\SalesWebMvc\obj\Debug\netcoreapp2.1\SalesWebMvc.TagHelpers.output.cache
 D:\Ariane\Curso Udemy - C#\Curso completo\Exercícios\SalesWebMvc\SalesWebMvc\obj\Debug\netcoreapp2.1\SalesWebMvc.RazorCoreGenerate.cache
-D:\Ariane\Curso Udemy - C#\Curso completo\Exercícios\SalesWebMvc\SalesWebMvc\obj\Debug\netcoreapp2.1\Razor\Views\Departments\Create.cshtml.g.cs
 D:\Ariane\Curso Udemy - C#\Curso completo\Exercícios\SalesWebMvc\SalesWebMvc\obj\Debug\netcoreapp2.1\Razor\Views\Departments\Delete.cshtml.g.cs
 D:\Ariane\Curso Udemy - C#\Curso completo\Exercícios\SalesWebMvc\SalesWebMvc\obj\Debug\netcoreapp2.1\Razor\Views\Departments\Details.cshtml.g.cs
 D:\Ariane\Curso Udemy - C#\Curso completo\Exercícios\SalesWebMvc\SalesWebMvc\obj\Debug\netcoreapp2.1\Razor\Views\Departments\Edit.cshtml.g.cs
@@ -39,3 +38,5 @@ D:\Ariane\Curso Udemy - C#\Curso completo\Exercícios\SalesWebMvc\SalesWebMvc\ob
 D:\Ariane\Curso Udemy - C#\Curso completo\Exercícios\SalesWebMvc\SalesWebMvc\obj\Debug\netcoreapp2.1\SalesWebMvc.genruntimeconfig.cache
 D:\Ariane\Curso Udemy - C#\Curso completo\Exercícios\SalesWebMvc\SalesWebMvc\obj\Debug\netcoreapp2.1\SalesWebMvc.csproj.CopyComplete
 D:\Ariane\Curso Udemy - C#\Curso completo\Exercícios\SalesWebMvc\SalesWebMvc\obj\Debug\netcoreapp2.1\SalesWebMvc.csproj.AssemblyReference.cache
+D:\Ariane\Curso Udemy - C#\Curso completo\Exercícios\SalesWebMvc\SalesWebMvc\obj\Debug\netcoreapp2.1\Razor\Views\Create.cshtml.g.cs
+D:\Ariane\Curso Udemy - C#\Curso completo\Exercícios\SalesWebMvc\SalesWebMvc\obj\Debug\netcoreapp2.1\Razor\Views\Sellers\Create.cshtml.g.cs
