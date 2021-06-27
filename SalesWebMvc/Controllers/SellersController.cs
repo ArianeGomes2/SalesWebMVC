@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using SalesWebMvc.Models;
+using SalesWebMvc.Models.ViewModels;
 using SalesWebMvc.Services;
 
 namespace SalesWebMvc.Controllers
@@ -11,10 +12,12 @@ namespace SalesWebMvc.Controllers
     public class SellersController : Controller
     {
         private readonly SellerService _sellerService; //declarãção de dependencia
+        private readonly DepartmentService _departmentService;
 
-        public SellersController(SellerService sellerService) //construtor com injeção de dependencia
+        public SellersController(SellerService sellerService, DepartmentService departmentService) //construtor com injeção de dependencia
         {
             _sellerService = sellerService;
+            _departmentService = departmentService;
         }
         public IActionResult Index() //chamada do conhtrolador, pegando o model e encaminhando os dados para a view
         {
@@ -25,7 +28,9 @@ namespace SalesWebMvc.Controllers
 
         public IActionResult Create()
         {
-            return View();
+            var departments = _departmentService.FindAll(); //buscar no db tds os departamentos 
+            var viewModel = new SellerFormViewModel { Departments = departments };
+            return View(viewModel);
         }
 
         [HttpPost] //anotation para indicar que essa ação é de post e não de get
