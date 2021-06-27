@@ -12,6 +12,7 @@ namespace SalesWebMvc.Models
         public DateTime BirthDate { get; set; }
         public double BaseSalary { get; set; }
         public Department Department { get; set; }  //implementação associando Seller com o Departament
+        public int DepartmentId { get; set; } //garantindo pro entity framework que o pra ele garantir que esse Id vai ter que existir, uma vez q o tipo int não pode ser nulo
         public ICollection<SalesRecord> Sales { get; set; } = new List<SalesRecord>(); //associação do Seller com o SalesRecord
 
         public Seller()

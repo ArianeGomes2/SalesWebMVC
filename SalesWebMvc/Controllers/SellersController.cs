@@ -33,7 +33,7 @@ namespace SalesWebMvc.Controllers
         public IActionResult Create(Seller seller)
         {
             _sellerService.Insert(seller); //implementação da ação de inserir esse cara no banco de dados
-            return RedirectToAction(nameof(Index)); //redirecionar minha requisição para ação index
+            return RedirectToAction(nameof(Index));
         }
     }
 }
