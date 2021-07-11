@@ -10,7 +10,7 @@ namespace SalesWebMvc.Services
     {
         private readonly SalesWebMvcContext _context;
 
-        public SellerService(SalesWebMvcContext context)//construtor para que3 a injeção de dependencias possa acontecer
+        public SellerService(SalesWebMvcContext context)//construtor para que a injeção de dependencias possa acontecer
         {
             _context = context;
         }
@@ -24,6 +24,18 @@ namespace SalesWebMvc.Services
         {
             _context.Add(obj); //insere o objeto no banco de dados
             _context.SaveChanges(); //confirmar no banco de dados
+        }
+
+        public Seller FindById(int id)
+        {
+            return _context.Seller.FirstOrDefault(obj => obj.Id == id);
+        }
+
+        public void Remove(int id)
+        {
+            var obj = _context.Seller.Find(id);
+            _context.Seller.Remove(obj);
+            _context.SaveChanges();
         }
     }
 }
