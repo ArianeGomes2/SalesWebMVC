@@ -39,6 +39,10 @@ namespace SalesWebMvc.Controllers
         [ValidateAntiForgeryToken] //previnir que minha aplicação sofra ataque CSRF
         public IActionResult Create(Seller seller)
         {
+            if (!ModelState.IsValid)
+            {
+                return View(seller);
+            }
             _sellerService.Insert(seller); //implementação da ação de inserir esse cara no banco de dados
             return RedirectToAction(nameof(Index));
         }
@@ -104,7 +108,11 @@ namespace SalesWebMvc.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Edit(int id, Seller seller)
         {
-            if(id != seller.Id)
+            if (!ModelState.IsValid)
+            {
+                return View(seller);
+            }
+            if (id != seller.Id)
             {
                 return RedirectToAction(nameof(Error), new { message = "Id mismatch" });
             }
